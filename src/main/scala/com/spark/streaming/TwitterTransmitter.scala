@@ -91,8 +91,8 @@ object TwitterTransmitter {
           ("UserFollowersCount" -> status.getUser.getFollowersCount) ~
           // Ration is calculated as the number of followers divided by number of people followed
           ("UserFollowersRatio" -> status.getUser.getFollowersCount.toFloat / status.getUser.getFriendsCount.toFloat) ~
-          ("Geo_Latitude" -> checkObj(status.getGeoLocation.getLatitude)) ~
-          ("Geo_Longitude" -> checkObj(status.getGeoLocation.getLongitude)) ~
+          // ("Geo_Latitude" -> checkObj(status.getGeoLocation.getLatitude)) ~
+          // ("Geo_Longitude" -> checkObj(status.getGeoLocation.getLongitude)) ~
           ("UserLang" -> status.getUser.getLang) ~
           ("UserLocation" -> status.getUser.getLocation) ~
           ("UserVerification" -> status.getUser.isVerified) ~
