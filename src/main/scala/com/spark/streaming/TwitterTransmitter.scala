@@ -104,9 +104,9 @@ object TwitterTransmitter {
           ("TextLength" -> status.getText.length) ~
           //Tokenized the tweet message and then filtered only words starting with #
           ("HashTags" -> status.getText.split(" ").filter(_.startsWith("#")).mkString(" ")) ~
-          ("StatusCreatedAt" -> formatter.format(status.getCreatedAt.getTime)) ~
-          ("PlaceName" -> checkObj(status.getPlace.getName)) ~
-          ("PlaceCountry" -> checkObj(status.getPlace.getCountry))
+          ("StatusCreatedAt" -> formatter.format(status.getCreatedAt.getTime))
+          // ("PlaceName" -> checkObj(status.getPlace.getName)) ~
+          // ("PlaceCountry" -> checkObj(status.getPlace.getCountry))
 
       // This function takes Map of tweet data and returns true if the message is not a spam
       def spamDetector(tweet: Map[String, Any]): Boolean = {
