@@ -5,9 +5,9 @@ version := "1.0"
 scalaVersion := "2.10.4"
 
 libraryDependencies ++= Seq(
-  "org.apache.spark" %% "spark-core" % "1.2.0",
-  "org.apache.spark" %% "spark-streaming" % "1.2.0",
-  "org.apache.spark" %% "spark-streaming-twitter" % "1.2.0",
+  "org.apache.spark" %% "spark-core" % "1.3.1",
+  "org.apache.spark" %% "spark-streaming" % "1.3.1",
+  "org.apache.spark" %% "spark-streaming-twitter" % "1.3.1",
   "com.typesafe" % "config" % "1.2.1",
   "org.elasticsearch" % "elasticsearch-spark_2.10" % "2.2.0-m1",
   "org.json4s" %% "json4s-native" % "3.2.11",
